@@ -3,4 +3,246 @@
   --title-font: 'Raleway', sans-serif;
   --primary-color: #555555;
   --accent-color: #ff6c00;
+  --subtitle-font-size: 11px;
+  --background: #f7f7f7;
+
+  --subtitle-dark-theme: rgba(157, 164, 189, 0.6);
+  --subtitle-light-theme: #303030;
+  --title-dark-theme: #ffffff;
+  --title-light-theme: #303030;
+  --description-dark-theme: #9da4bd;
 }
+body {
+  font-family: var(--text-font);
+  color: var(--primary-color);
+  font-size: var(--subtitle-font-size);
+}
+
+/* =======RESET======= */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* =======END RESET======= */
+
+/* =======COMPONENTS======= */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.modal-btn {
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  /* color: #FFFFFF; */
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.social-links {
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.social-links:hover,
+.social-links:focus {
+  color: var(--accent-color);
+}
+
+.title {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+.title-dark-theme {
+  color: var(--title-dark-theme);
+}
+.title-light-theme {
+  color: var(--title-light-theme);
+}
+
+.subtitle {
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.subtitle-dark-theme {
+  color: var(--subtitle-dark-theme);
+}
+.subtitle-light-theme {
+  color: var(--subtitle-light-theme);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.description-dark-theme {
+  color: var(--description-dark-theme);
+}
+.description-light-theme {
+  color: var(--primary-color);
+}
+
+/* =======END COMPONENTS======= */
+
+/* =======HEADER======= */
+
+.navigation-list-links {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+.navigation-list-links:hover,
+.navigation-list-links:focus {
+  color: var(--accent-color);
+}
+.navigation-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+.navigation-tel:hover,
+.navigation-tel:focus {
+  color: var(--accent-color);
+}
+/* =======END HEADER======= */
+
+/* =======HERO======= */
+.hero {
+  background-color: #191c26;
+}
+.hero-list {
+  background-color: #ffffff;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+/* =======END HERO======= */
+
+/* =======ABOUT======= */
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+/* =======END ABOUT======= */
+
+/* =======SERVICES======= */
+.services {
+  background-color: #191c26;
+}
+/* =======END SERVICES======= */
+
+/* =======ACHIEVEMENTS======= */
+.achievements-list-counter {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.achievements-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #303030;
+}
+.achievements-list-item {
+  background: var(--background);
+}
+/* =======END ACHIEVEMENTS======= */
+
+/* =======MASTERS======= */
+.master-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.master-profession {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+.masters {
+  background: var(--background);
+}
+/* =======END MASTERS======= */
+
+/* =======GALLARY======= */
+/* Стили будут позже */
+/* =======END GALLARY======= */
+
+/* =======FORM======= */
+.contact-form-section {
+  background-color: #191c26;
+}
+/* =======END FORM======= */
+
+/* =======CONTACTS======= */
+.contact-information {
+  background-color: #191c26;
+}
+.contact-information-list-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.underline {
+  text-decoration-line: underline;
+}
+.white {
+  color: #ffffff;
+}
+/* =======END CONTACTS======= */
+
+/* =======FOOTER======= */
+.footer {
+  background-color: var(--background);
+}
+.copy {
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+/* =======END FOOTER======= */
