@@ -349,6 +349,19 @@ img {
 /* =======END ACHIEVEMENTS======= */
 
 /* =======MASTERS======= */
+.masters .title {
+  margin-bottom: 44px;
+}
+.masters-list {
+  display: flex;
+  text-align: center;
+}
+.masters-contct {
+  padding: 30px 130px 77px;
+}
+.masters-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .master-name {
   font-weight: 400;
   font-size: 18px;
@@ -369,7 +382,16 @@ img {
 /* =======END MASTERS======= */
 
 /* =======GALLARY======= */
-/* Стили будут позже */
+.gallary .subtitle {
+  margin-bottom: 44px;
+}
+.gallary-list {
+  display: flex;
+  align-items: center;
+}
+.gallary-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* =======END GALLARY======= */
 
 /* =======FORM======= */
