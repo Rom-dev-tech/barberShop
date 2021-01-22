@@ -264,8 +264,36 @@ img {
 /* =======END ABOUT======= */
 
 /* =======SERVICES======= */
+.flex-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+.services .title {
+  margin-bottom: 44px;
+}
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
 .services {
-  background-color: #191c26;
+  background: url('../images/services/bgc-services.jpg') no-repeat center;
+}
+.services .modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+.services-left-side {
+  padding: 30px 40px;
+  width: 50%;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.services-rigth-side {
+  padding: 30px 40px;
+  width: 50%;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 /* =======END SERVICES======= */
 
