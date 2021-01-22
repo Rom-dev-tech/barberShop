@@ -264,7 +264,7 @@ img {
 /* =======END ABOUT======= */
 
 /* =======SERVICES======= */
-.flex-container {
+.services-flex-container {
   display: flex;
   margin-bottom: 50px;
 }
@@ -298,6 +298,41 @@ img {
 /* =======END SERVICES======= */
 
 /* =======ACHIEVEMENTS======= */
+.achievements-flex-container {
+  display: flex;
+}
+.achievements-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 370px;
+}
+.achievements-left-side {
+  margin-right: 65px;
+  padding-left: 100px;
+}
+.achievements-rigth-side {
+  padding-left: 65px;
+  max-width: 500px;
+}
+.achievements .title {
+  margin-bottom: 20px;
+}
+.achievements-list-item {
+  padding: 20px 21px;
+  min-height: 134px;
+  width: 170px;
+  background: var(--background);
+  text-align: center;
+}
+.achievements-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.achievements-list-item:not(:nth-child(even)) {
+  margin-right: 30px;
+}
+
 .achievements-list-counter {
   font-weight: 700;
   font-size: 42px;
@@ -310,9 +345,6 @@ img {
   font-size: 11px;
   line-height: 1.36;
   color: #303030;
-}
-.achievements-list-item {
-  background: var(--background);
 }
 /* =======END ACHIEVEMENTS======= */
 
