@@ -354,13 +354,15 @@ img {
 }
 .masters-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
   text-align: center;
 }
 .masters-contct {
   padding: 30px 130px 77px;
 }
-.masters-list-item:not(:last-child) {
-  margin-right: 30px;
+.masters-list-item {
+  margin: 15px;
 }
 .master-name {
   font-weight: 400;
@@ -388,9 +390,11 @@ img {
 .gallary-list {
   display: flex;
   align-items: center;
+  margin: -15px;
 }
-.gallary-list-item:not(:last-child) {
-  margin-right: 30px;
+.gallary-list-item {
+  width: calc((100% - 90px) / 4);
+  margin: 15px;
 }
 /* =======END GALLARY======= */
 
