@@ -398,7 +398,7 @@ img {
   text-align: center;
 }
 .masters-contct {
-  padding: 30px 130px 77px;
+  padding: 30px 85px 0px 85px;
 }
 .masters-list-item {
   margin: 15px;
@@ -415,10 +415,29 @@ img {
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.02em;
-  color: #ff6c00;
+  color: var(--accent-color);
+
+  margin-bottom: 30px;
 }
 .masters {
   background: var(--background);
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.social-link:hover,
+.social-link:focus {
+  fill: var(--accent-color);
 }
 /* =======END MASTERS======= */
 
