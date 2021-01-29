@@ -245,9 +245,6 @@ img {
   background-position: center;
   background-size: cover;
 }
-.hero-list {
-  background-color: #ffffff;
-}
 .main-title {
   font-weight: 700;
   font-size: 72px;
@@ -257,10 +254,9 @@ img {
 
   margin-bottom: 20px;
 }
-.hero .description {
-  max-width: 450px;
+.hero-thumb-text {
+  max-width: 480px;
 }
-
 /* =======END HERO======= */
 
 /* =======ABOUT======= */
