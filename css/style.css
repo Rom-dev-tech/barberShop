@@ -38,7 +38,9 @@ ol {
 img {
   display: block;
 }
-
+a {
+  display: block;
+}
 .list {
   list-style: none;
 }
@@ -482,7 +484,7 @@ img {
   margin-bottom: 40px;
 }
 .address {
-  width: 225px;
+  width: 270px;
 }
 .contact-information-list-item:not(:last-child) {
   margin-bottom: 20px;
@@ -499,6 +501,13 @@ img {
 }
 .white {
   color: #ffffff;
+}
+.contact-information-list-link {
+  display: flex;
+  align-items: center;
+}
+.address-icon {
+  margin-right: 20px;
 }
 /* =======END CONTACTS======= */
 
