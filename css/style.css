@@ -401,6 +401,11 @@ a {
 }
 
 .achievements-list-counter {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -412,6 +417,33 @@ a {
   font-size: 11px;
   line-height: 1.36;
   color: #303030;
+}
+.achievements-list-counter::after,
+.achievements-list-counter::before {
+  position: absolute;
+  /* top: 15%;
+  right: 15%; */
+  content: '';
+  display: block;
+
+  width: 10px;
+  height: 1px;
+
+  background-color: var(--accent-color);
+}
+.achievements-list-counter.second::after,
+.achievements-list-counter.second::before {
+  top: 15%;
+  right: 15%;
+}
+.achievements-list-counter.first::after,
+.achievements-list-counter.first::before {
+  top: 15%;
+  right: 25%;
+}
+
+.achievements-list-counter::before {
+  transform: rotate(-90deg);
 }
 /* =======END ACHIEVEMENTS======= */
 
