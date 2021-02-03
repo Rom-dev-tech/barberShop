@@ -485,12 +485,12 @@ a {
 /* =======END GALLARY======= */
 
 /* =======FORM======= */
+.contact-form-section {
+  background-color: #191c26;
+}
 .form-container {
   min-width: 655px;
   padding-left: 56px;
-}
-.contact-form-section {
-  background-color: #cccccc;
 }
 .form-flex-container {
   display: flex;
@@ -505,6 +505,10 @@ a {
 }
 .contact-information {
   background-color: #191c26;
+  background-image: url('../images/form-contact/Bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .contact-information .title {
   margin-bottom: 40px;
