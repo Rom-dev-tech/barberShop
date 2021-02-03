@@ -127,6 +127,12 @@ a {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.subtitle-dark-theme {
+  color: var(--subtitle-dark-theme);
+}
+.subtitle-light-theme {
+  color: var(--subtitle-light-theme);
+}
 .subtitle::before {
   content: '';
   display: block;
@@ -136,11 +142,9 @@ a {
 }
 .subtitle-dark-theme::before {
   background-color: var(--subtitle-dark-theme);
-  color: var(--subtitle-dark-theme);
 }
 .subtitle-light-theme::before {
   background-color: var(--subtitle-light-theme);
-  color: var(--subtitle-light-theme);
 }
 
 .description {
