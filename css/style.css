@@ -245,6 +245,7 @@ a {
 .hero .container {
   display: flex;
   align-items: flex-end;
+  padding-right: 0;
 }
 .hero-list {
   display: flex;
