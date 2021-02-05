@@ -213,16 +213,15 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.backdrop-btn {
+.backdrop-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
 
   width: 30px;
   height: 30px;
+  background-color: transparent;
   border-radius: 50%;
-  border: none;
-  background-color: #3c4b7e;
 
   cursor: pointer;
 }
