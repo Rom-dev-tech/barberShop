@@ -292,7 +292,6 @@ a {
 /* =======HERO======= */
 .hero .container {
   display: flex;
-  align-items: flex-end;
 
   padding-right: 0;
 }
@@ -307,6 +306,8 @@ a {
   margin-right: 40px;
 }
 .hero-left-side {
+  display: flex;
+  align-items: flex-end;
   width: 100px;
 
   padding: 0 0 40px 27px;
