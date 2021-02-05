@@ -552,6 +552,9 @@ a {
   border-radius: 50%;
   background-color: #ffffff;
 }
+.social-icon {
+  transition: fill 250ms linear;
+}
 .social-link:hover,
 .social-link:focus {
   fill: var(--accent-color);
