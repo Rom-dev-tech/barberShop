@@ -227,16 +227,12 @@ a {
 
 /* =======HEADER======= */
 .header {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: fixed;
+  width: 100%;
 }
 .header .container {
   display: flex;
   align-items: center;
-
-  /* background-color: #3c4b7e; */
 }
 .navigation {
   display: flex;
