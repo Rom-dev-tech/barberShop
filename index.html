@@ -333,16 +333,25 @@
       </section>
 
       <!--FORM-->
-         <div class="form-flex-container">
-            <section class="contact-form-section section-padding">
-                  <div class="form-container">
+         <div class="form-flex-container container">
+            <section class="form-section">
                      <h2 class="title title-dark-theme">Онлайн-запись</h2>
-                  </div>
+
+                     <form action="#" class="form" autocomplete="off">
+
+                        <input class="name-field" type="text" name="user-name" placeholder="Имя*" required minlength="2">
+
+                        <input class="phone-field" type="tel" name="user-phone" placeholder="Телефон*" required>
+
+                        <textarea class="message" name="message" placeholder="сообщение"></textarea>
+
+                        <button class="modal-btn modal-btn-dark-theme">отправить</button>
+
+                     </form>
             </section>
 
             <!--CONTACTS-->
             <section class="contact-information section-padding">
-                  <div class="contacts-container">
                      <h2 class="title title-dark-theme">Контакты</h2>
                      <address class="address">
                         <ul class="contact-information-list list">
@@ -370,7 +379,6 @@
                      </address>
                      <p class="subtitle white">время работы</p>
                      <p class="description description-dark-theme">Ежедневно с 9:00 до 22:00 </p>
-                  </div>
             </section>
          </div>
    </main>

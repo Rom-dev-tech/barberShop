@@ -578,31 +578,113 @@ a {
 }
 /* =======END GALLARY======= */
 
-/* =======FORM======= */
-.contact-form-section {
-  background-color: #191c26;
-}
-.form-container {
-  min-width: 655px;
-  padding-left: 56px;
-}
+/* =======FORM CONTACT CONTAINER======= */
 .form-flex-container {
   display: flex;
   justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* =======END FORM CONTACT CONTAINER======= */
+
+/* =======FORM======= */
+.form-section {
+  background-color: #191c26;
+  padding: 130px 40px 193px 55px;
+  min-width: 655px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.form-section .title {
+  margin-bottom: 44px;
+}
+.name-field,
+.phone-field {
+  min-width: 270px;
+  height: 24px;
+
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  margin-bottom: 44px;
+
+  transition: border-bottom 250ms linear;
+
+  cursor: pointer;
+}
+.name-field {
+  margin-right: 20px;
+}
+.name-field::placeholder,
+.phone-field::placeholder,
+.message::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+  transition: color 250ms linear;
+}
+.name-field:focus-within::placeholder,
+.phone-field:focus-within::placeholder,
+.message:focus-within::placeholder {
+  color: #ffffff;
+}
+.name-field:focus-within,
+.phone-field:focus-within,
+.message:focus-within {
+  border-bottom: 1px solid #ffffff;
+}
+.name-field:focus-within,
+.phone-field:focus-within,
+.message:focus-within {
+  outline: none;
+}
+
+.message {
+  width: 100%;
+  height: 76px;
+
+  resize: none;
+  margin-bottom: 44px;
+
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  margin-bottom: 44px;
+
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  transition: border-bottom 250ms linear;
+  cursor: pointer;
 }
 /* =======END FORM======= */
 
 /* =======CONTACTS======= */
-.contacts-container {
-  min-width: 625px;
-  padding-left: 100px;
-}
 .contact-information {
   background-color: #191c26;
   background-image: url('../images/form-contact/Bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  min-width: 625px;
+  padding-left: 100px;
 }
 .contact-information .title {
   margin-bottom: 40px;
