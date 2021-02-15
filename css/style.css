@@ -782,6 +782,8 @@ a {
 
   color: var(--primary-color);
   margin-bottom: 6px;
+
+  transition: color 250ms linear;
 }
 .form-input,
 .message-input {
@@ -791,8 +793,10 @@ a {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 12px;
+  padding-left: 35px;
   margin-bottom: 10px;
+
+  transition: border 250ms linear;
 }
 .message-input {
   resize: none;
@@ -839,5 +843,28 @@ a {
 }
 .main-form-send-btn {
   align-self: center;
+}
+.icon-container {
+  display: block;
+  position: relative;
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms linear;
+}
+.form-input:focus-within,
+.message-input:focus-within {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+.form-field:focus-within .form-icon {
+  fill: var(--accent-color);
+}
+.form-field:focus-within .form-label {
+  color: var(--accent-color);
 }
 /* =======END MAIN FORM======= */
