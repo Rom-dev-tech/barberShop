@@ -401,7 +401,52 @@
    <!--!Модельное окно-->
    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-         <button class="backdrop-close-btn" data-modal-close type="button">X</button>
+         <button class="backdrop-close-btn" data-modal-close type="button">
+            <svg class="icon-close-btn" width="30" height="30" aria-label="Крестик закрытия">
+               <use href="./images/sprite.svg#close"></use>
+            </svg>
+         </button>
+
+         <!--main-form-->
+         <form action="#" class="main-form" autocomplete="off">
+            <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+
+            <!--Name-->
+            <label class="form-field">
+               <span class="form-label">Имя</span>
+               <input class="form-input" type="text" name="user-name" required minlength="2">
+            </label>
+            
+            <!--Phone-->
+            <label class="form-field">
+               <span class="form-label">Телефон</span>
+               <input class="form-input" type="tel" name="user-phone" required>
+            </label>
+
+            <!--Mail-->
+            <label class="form-field">
+               <span class="form-label">Почта</span>
+               <input class="form-input" type="email" name="user-mail" required>
+            </label>
+
+            <!-- Message-->
+            <label class="form-field">
+               <span class="form-label">Комментарий</span>
+               <textarea class="message-input" name="message" placeholder="Введите текст"></textarea>
+            </label>
+
+            <!--Checkbox-->
+            <label class="checkbox-field">
+               <input class="checkbox-input visually-hidden" type="checkbox" name="policy">
+               <span class="icon-checkbox"></span>
+               </svg>
+               <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю</span><a class="policy-link" href="#">Условия договора</a>
+            </label>
+
+            <!--Sent BTN-->
+            <button class="main-form-send-btn modal-btn" type="submit">Отправить</button>
+
+         </form>
       </div>
    </div>
 
