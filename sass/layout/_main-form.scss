@@ -24,6 +24,9 @@
   color: var(--primary-color);
   margin-bottom: 6px;
 
+  .form-field:focus-within & {
+    color: var(--accent-color);
+  }
   transition: color 250ms linear;
 }
 .form-input,
@@ -37,6 +40,10 @@
   padding-left: 35px;
   margin-bottom: 10px;
 
+  &:focus-within {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
   transition: border 250ms linear;
 }
 .message-input {
@@ -45,9 +52,10 @@
 
   padding: 12px 16px;
   margin-bottom: 20px;
-}
-.message-input::placeholder {
-  color: var(--description-dark-theme);
+
+  &::placeholder {
+    color: var(--description-dark-theme);
+  }
 }
 .checkbox-field {
   display: flex;
@@ -73,14 +81,14 @@
   width: 16px;
   height: 15px;
 
+  .checkbox-input:focus + & {
+    box-shadow: 0 0 0 0.1em var(--accent-color);
+  }
+  .checkbox-input:checked + & {
+    background-image: url('../images/icon-check.svg');
+    background-repeat: no-repeat;
+  }
   transition: box-shadow 250ms linear;
-}
-.checkbox-input:focus + .icon-checkbox {
-  box-shadow: 0 0 0 0.1em var(--accent-color);
-}
-.checkbox-input:checked + .icon-checkbox {
-  background-image: url('../images/icon-check.svg');
-  background-repeat: no-repeat;
 }
 .main-form-send-btn {
   align-self: center;
@@ -95,16 +103,8 @@
   left: 12px;
   transform: translateY(-50%);
 
+  .form-field:focus-within & {
+    fill: var(--accent-color);
+  }
   transition: fill 250ms linear;
-}
-.form-input:focus-within,
-.message-input:focus-within {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
-.form-field:focus-within .form-icon {
-  fill: var(--accent-color);
-}
-.form-field:focus-within .form-label {
-  color: var(--accent-color);
 }

@@ -10,7 +10,8 @@
 }
 
 .name-field,
-.phone-field {
+.phone-field,
+.message {
   min-width: 270px;
   height: 24px;
 
@@ -27,37 +28,30 @@
   transition: border-bottom 250ms linear;
 
   cursor: pointer;
+
+  &::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 250ms linear;
+  }
+
+  &:focus-within::placeholder {
+    color: #ffffff;
+  }
+
+  &:focus-within {
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+  }
 }
 .name-field {
   margin-right: 20px;
-}
-.name-field::placeholder,
-.phone-field::placeholder,
-.message::placeholder {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: rgba(157, 164, 189, 0.4);
-  transition: color 250ms linear;
-}
-.name-field:focus-within::placeholder,
-.phone-field:focus-within::placeholder,
-.message:focus-within::placeholder {
-  color: #ffffff;
-}
-.name-field:focus-within,
-.phone-field:focus-within,
-.message:focus-within {
-  border-bottom: 1px solid #ffffff;
-}
-.name-field:focus-within,
-.phone-field:focus-within,
-.message:focus-within {
-  outline: none;
 }
 
 .message {
@@ -65,18 +59,4 @@
   height: 76px;
 
   resize: none;
-  margin-bottom: 44px;
-
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  margin-bottom: 44px;
-
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-
-  transition: border-bottom 250ms linear;
-  cursor: pointer;
 }

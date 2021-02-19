@@ -9,7 +9,7 @@
   padding-left: 100px;
 }
 .address {
-  width: 270px;
+  max-width: 270px;
 }
 .contact-information-list-item {
   position: relative;
@@ -34,7 +34,4 @@
   color: #9da4bd;
 
   margin-left: 40px;
-}
-.white {
-  color: #ffffff;
 }
