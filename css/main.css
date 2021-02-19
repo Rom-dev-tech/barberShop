@@ -97,6 +97,13 @@ a {
   justify-content: space-between;
 }
 
+.form-flex-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .modal-btn {
   font-weight: 600;
   font-size: 12px;
@@ -551,13 +558,6 @@ a {
 .gallary-list-item {
   width: calc((100% - 90px) / 4);
   margin: 15px;
-}
-
-.form-flex-container {
-  display: flex;
-  justify-content: center;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 .form-section {

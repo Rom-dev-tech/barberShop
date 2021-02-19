@@ -6,6 +6,7 @@
 // BASE
 @import './base/common';
 @import './base/container';
+@import './base/form-and-contacts-flex-container';
 
 // COMPONENTS
 @import './components/modal-btn';
@@ -24,7 +25,6 @@
 @import './layout/achievements';
 @import './layout/masters';
 @import './layout/gallary';
-@import './layout/form-and-contacts-flex-container';
 @import './layout/form';
 @import './layout/contacts';
 @import './layout/footer';
