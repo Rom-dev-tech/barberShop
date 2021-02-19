@@ -1,0 +1,25 @@
+.social-links {
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--subtitle-light-theme);
+
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.hero-list::before,
+.footer-list::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+
+  flex-shrink: 0;
+
+  background-color: #303030;
+}

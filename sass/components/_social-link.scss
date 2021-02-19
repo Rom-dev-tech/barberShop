@@ -1,0 +1,21 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.social-icon {
+  transition: fill 250ms linear;
+}

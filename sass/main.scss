@@ -1,0 +1,33 @@
+// UTILS
+@import './utils/variebles';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+
+// BASE
+@import './base/common';
+@import './base/container';
+
+// COMPONENTS
+@import './components/modal-btn';
+@import './components/title';
+@import './components/subtitle';
+@import './components/description';
+@import './components/social-link';
+@import './components/social-links';
+
+// LAYOUT
+@import './layout/logo';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/services';
+@import './layout/achievements';
+@import './layout/masters';
+@import './layout/gallary';
+@import './layout/form-and-contacts-flex-container';
+@import './layout/form';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/backdrop';
+@import './layout/modal';
+@import './layout/main-form';

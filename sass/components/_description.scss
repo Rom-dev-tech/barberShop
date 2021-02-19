@@ -1,0 +1,17 @@
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  &-dark-theme {
+    color: var(--description-dark-theme);
+  }
+  &-light-theme {
+    color: var(--primary-color);
+  }
+
+  .about & {
+    margin-bottom: 20px;
+  }
+}

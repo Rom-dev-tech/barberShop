@@ -1,0 +1,9 @@
+.gallary-list {
+  display: flex;
+  align-items: center;
+  margin: -15px;
+}
+.gallary-list-item {
+  width: calc((100% - 90px) / 4);
+  margin: 15px;
+}

@@ -1,0 +1,38 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  background: var(--title-dark-theme);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    cursor: pointer;
+  }
+}
+
+.icon-close-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill 250ms linear;
+
+  .modal-close-btn:focus &,
+  .modal-close-btn:hover & {
+    fill: var(--accent-color);
+  }
+}

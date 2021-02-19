@@ -1,0 +1,40 @@
+.contact-information {
+  background-color: #191c26;
+  background-image: url('../images/form-contact/Bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-width: 625px;
+  padding-left: 100px;
+}
+.address {
+  width: 270px;
+}
+.contact-information-list-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.contact-information-list {
+  margin-bottom: 70px;
+}
+.address-icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+.contact-information-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+
+  margin-left: 40px;
+}
+.white {
+  color: #ffffff;
+}

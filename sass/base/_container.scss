@@ -1,0 +1,26 @@
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  .header & {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero & {
+    display: flex;
+
+    padding-right: 0;
+  }
+
+  .about & {
+    display: flex;
+  }
+
+  .footer & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

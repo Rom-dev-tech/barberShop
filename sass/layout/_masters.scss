@@ -1,0 +1,31 @@
+.masters {
+  background: var(--background);
+}
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  text-align: center;
+}
+.masters-contct {
+  padding: 30px 85px 0px 85px;
+}
+.masters-list-item {
+  margin: 15px;
+}
+.master-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.master-profession {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  margin-bottom: 30px;
+}

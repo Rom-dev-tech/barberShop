@@ -1,0 +1,80 @@
+.achievements-flex-container {
+  display: flex;
+}
+.achievements-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 370px;
+}
+.achievements-left-side {
+  margin-right: 65px;
+  padding-left: 100px;
+}
+.achievements-rigth-side {
+  padding-left: 65px;
+  max-width: 500px;
+}
+
+.achievements-list-item {
+  padding: 20px 21px;
+  min-height: 134px;
+  width: 170px;
+  background: var(--background);
+  text-align: center;
+
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
+  &:not(:nth-child(even)) {
+    margin-right: 30px;
+  }
+}
+.achievements-list-counter {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: #303030;
+
+  &::after,
+  &::before {
+    position: absolute;
+    /* top: 15%;
+   right: 15%; */
+    content: '';
+    display: block;
+
+    width: 10px;
+    height: 1px;
+
+    background-color: var(--accent-color);
+  }
+
+  &.second::after,
+  &.second::before {
+    top: 15%;
+    right: 15%;
+  }
+
+  &.first::after,
+  &.first::before {
+    top: 15%;
+    right: 25%;
+  }
+
+  &::before {
+    transform: rotate(-90deg);
+  }
+}
+.achievements-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #303030;
+}

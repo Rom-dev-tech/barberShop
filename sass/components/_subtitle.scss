@@ -1,0 +1,37 @@
+.subtitle {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+  }
+
+  &-dark-theme {
+    color: var(--subtitle-dark-theme);
+
+    &::before {
+      background-color: var(--subtitle-dark-theme);
+    }
+  }
+  &-light-theme {
+    color: var(--subtitle-light-theme);
+
+    &::before {
+      background-color: var(--subtitle-light-theme);
+    }
+  }
+
+  .gallary & {
+    margin-bottom: 44px;
+  }
+}

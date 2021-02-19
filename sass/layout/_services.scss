@@ -1,0 +1,31 @@
+.services-flex-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.services {
+  margin: 0 auto;
+  max-width: 1280px;
+  background: #111319;
+  background-image: url('../images/services/bg-services.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.services-left-side {
+  padding: 30px 40px;
+  width: 50%;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.services-rigth-side {
+  padding: 30px 40px;
+  width: 50%;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}

@@ -1,0 +1,29 @@
+.title {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  &-dark-theme {
+    color: var(--title-dark-theme);
+  }
+  &-light-theme {
+    color: var(--title-light-theme);
+  }
+
+  .about &,
+  .achievements & {
+    margin-bottom: 20px;
+  }
+
+  .services &,
+  .masters &,
+  .form-section & {
+    margin-bottom: 44px;
+  }
+
+  .contact-information & {
+    margin-bottom: 40px;
+  }
+}
