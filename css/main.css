@@ -32,10 +32,6 @@
   text-decoration: none;
 }
 
-.address {
-  font-style: normal;
-}
-
 body {
   font-family: var(--text-font);
   color: var(--primary-color);
@@ -640,6 +636,7 @@ a {
 
 .address {
   max-width: 270px;
+  font-style: normal;
 }
 
 .contact-information-list-item {
