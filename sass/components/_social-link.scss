@@ -1,8 +1,10 @@
 .social-list {
+  @extend %list;
   display: flex;
   justify-content: space-between;
 }
 .social-link {
+  @extend %link;
   display: flex;
   justify-content: center;
   align-items: center;

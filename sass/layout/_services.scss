@@ -2,6 +2,9 @@
   display: flex;
   margin-bottom: 50px;
 }
+.services-list {
+  @extend %list;
+}
 .services-list-item {
   display: flex;
   justify-content: space-between;

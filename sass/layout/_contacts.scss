@@ -20,6 +20,7 @@
   }
 }
 .contact-information-list {
+  @extend %list;
   margin-bottom: 70px;
 }
 .address-icon {
@@ -28,6 +29,7 @@
   left: 0;
 }
 .contact-information-list-link {
+  @extend %link;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;

@@ -8,6 +8,7 @@
   color: #9da4bd;
 }
 .footer-list {
+  @extend %list;
   display: flex;
   align-items: center;
 }
