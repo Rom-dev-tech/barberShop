@@ -1,7 +1,11 @@
 .logo {
   @extend %link;
-  margin-right: 71px;
-  padding: 32px 0;
+  // margin-right: 71px;
+  padding: 40px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+  }
 
   animation-duration: 1500ms;
   /* animation-iteration-count: 2; */
