@@ -17,13 +17,18 @@
     color: var(--title-light-theme);
   }
 
-  .about &,
-  .achievements & {
+  .about & {
     margin-bottom: 20px;
 
     @media screen and (max-width: 1279px) {
       margin-right: 20px;
     }
+  }
+
+  .achievements & {
+    font-size: 42px;
+    line-height: 1.166;
+    margin-bottom: 20px;
   }
 
   .services &,

@@ -220,16 +220,20 @@ a {
   color: var(--title-light-theme);
 }
 
-.about .title,
-.achievements .title {
+.about .title {
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1279px) {
-  .about .title,
-  .achievements .title {
+  .about .title {
     margin-right: 20px;
   }
+}
+
+.achievements .title {
+  font-size: 42px;
+  line-height: 1.166;
+  margin-bottom: 20px;
 }
 
 .services .title,
@@ -320,6 +324,12 @@ a {
     font-size: 18px;
     line-height: 1.666;
   }
+}
+
+.achievements .description {
+  font-size: 18px;
+  line-height: 1.166;
+  margin-bottom: 44px;
 }
 
 .social-list {
@@ -796,31 +806,68 @@ a {
 
 .achievements-flex-container {
   display: flex;
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 1280px) {
+  .achievements-flex-container {
+    flex-direction: row;
+  }
 }
 
 .achievements-list {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  width: 370px;
 }
 
-.achievements-left-side {
-  margin-right: 65px;
-  padding-left: 100px;
+@media screen and (min-width: 1280px) {
+  .achievements-list {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .achievements-left-side {
+    padding-left: 240px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .achievements-left-side {
+    padding-left: 100px;
+    margin-right: 65px;
+  }
 }
 
 .achievements-rigth-side {
-  padding-left: 65px;
   max-width: 500px;
+}
+
+@media screen and (min-width: 1280px) {
+  .achievements-rigth-side {
+    padding-left: 65px;
+  }
 }
 
 .achievements-list-item {
   padding: 20px 21px;
-  min-height: 134px;
-  width: 170px;
+  min-height: 133px;
+  width: 193px;
   background: var(--background);
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .achievements-list-item {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .achievements-list-item {
+    width: 170px;
+  }
 }
 
 .achievements-list-item:nth-child(even) {
@@ -832,14 +879,12 @@ a {
 }
 
 .achievements-list-counter {
-  display: flex;
-  justify-content: center;
   position: relative;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--title-light-theme);
 }
 
 .achievements-list-counter::after, .achievements-list-counter::before {
@@ -869,9 +914,8 @@ a {
 
 .achievements-text {
   font-weight: 600;
-  font-size: 11px;
   line-height: 1.36;
-  color: #303030;
+  color: var(--title-light-theme);
 }
 
 .masters {
