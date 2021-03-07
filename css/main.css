@@ -310,6 +310,18 @@ a {
   margin-bottom: 20px;
 }
 
+.services .description {
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+@media screen and (min-width: 768px) {
+  .services .description {
+    font-size: 18px;
+    line-height: 1.666;
+  }
+}
+
 .social-list {
   display: flex;
   justify-content: space-between;
@@ -693,8 +705,18 @@ a {
 }
 
 .services-flex-container {
-  display: flex;
-  margin-bottom: 50px;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  padding: 30px;
+  margin-bottom: 74px;
+}
+
+@media screen and (min-width: 1280px) {
+  .services-flex-container {
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0px;
+    background: transparent;
+  }
 }
 
 .services-list-item {
@@ -707,25 +729,69 @@ a {
 }
 
 .services {
+  max-width: 480px;
+  height: 826px;
   margin: 0 auto;
-  max-width: 1280px;
   background: #111319;
-  background-image: url("../images/services/bg-services.png");
+  background-image: url("../images/services/services-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.services-left-side {
-  padding: 30px 40px;
-  width: 50%;
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .services {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/services/services-mobile@2x.png");
+  }
 }
 
-.services-rigth-side {
-  padding: 30px 40px;
-  width: 50%;
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+@media screen and (min-width: 768px) {
+  .services {
+    max-width: 768px;
+    height: 858px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/services/services-tablet.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .services {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/services/services-tablet@2x.png");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services {
+    max-width: 1280px;
+    height: 718px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/services/services-desktop.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .services {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/services/services-desktop@2x.png");
+  }
+}
+
+.services-left-side {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .services-left-side {
+    margin-bottom: 0px;
+    padding: 30px 40px;
+    width: 50%;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services-rigth-side {
+    padding: 30px 40px;
+    width: 50%;
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .achievements-flex-container {
