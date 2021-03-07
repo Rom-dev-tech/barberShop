@@ -1,9 +1,14 @@
 .title {
   font-family: var(--title-font);
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.178;
   letter-spacing: 0.05em;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
 
   &-dark-theme {
     color: var(--title-dark-theme);
@@ -15,6 +20,10 @@
   .about &,
   .achievements & {
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1279px) {
+      margin-right: 20px;
+    }
   }
 
   .services &,

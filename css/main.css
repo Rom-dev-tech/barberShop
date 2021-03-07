@@ -133,8 +133,10 @@ a {
   }
 }
 
-.about .container {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .about .container {
+    display: flex;
+  }
 }
 
 .footer .container {
@@ -198,9 +200,16 @@ a {
 .title {
   font-family: var(--title-font);
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.178;
   letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    font-size: 42px;
+    line-height: 1.17;
+  }
 }
 
 .title-dark-theme {
@@ -214,6 +223,13 @@ a {
 .about .title,
 .achievements .title {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1279px) {
+  .about .title,
+  .achievements .title {
+    margin-right: 20px;
+  }
 }
 
 .services .title,
@@ -612,12 +628,22 @@ a {
   }
 }
 
-.about-list {
-  display: flex;
+@media screen and (min-width: 1280px) {
+  .about-list {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .about-list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+  .about-list-item:not(:last-child) {
+    margin-bottom: 0px;
+    margin-left: 30px;
+  }
 }
 
 .about-text {
@@ -625,15 +651,45 @@ a {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 
-.about-left-site {
-  margin-right: 32px;
+@media screen and (min-width: 1280px) {
+  .about-text {
+    margin-bottom: 44px;
+  }
 }
 
-.about-rigth-side {
-  padding-left: 32px;
+@media screen and (max-width: 767px) {
+  .about-left-site {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-left-site {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-left-site {
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-rigth-side {
+    padding-left: 15px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-rigth-side {
+    padding-left: 32px;
+    max-width: 508px;
+  }
 }
 
 .services-flex-container {
