@@ -5,10 +5,10 @@
   line-height: 1.178;
   letter-spacing: 0.05em;
 
-  @media screen and (min-width: 1280px) {
-    font-size: 42px;
-    line-height: 1.17;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   font-size: 42px;
+  //   line-height: 1.17;
+  // }
 
   &-dark-theme {
     color: var(--title-dark-theme);
@@ -25,7 +25,9 @@
     }
   }
 
-  .achievements & {
+  .achievements &,
+  .services &,
+  .masters & {
     font-size: 42px;
     line-height: 1.166;
     margin-bottom: 20px;

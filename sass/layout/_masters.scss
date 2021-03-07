@@ -3,23 +3,45 @@
 }
 .masters-list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-  text-align: center;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    text-align: center;
+  }
 }
 .masters-contct {
-  padding: 30px 85px 0px 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.masters-img {
+  margin-bottom: 30px;
 }
 .masters-list-item {
-  margin: 15px;
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 1279px) {
+      margin-bottom: 64px;
+    }
+  }
 }
 .master-name {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
-  color: #303030;
+  color: var(--title-light-theme);
+  margin-bottom: 8px;
 }
 .master-profession {
   font-weight: 400;
