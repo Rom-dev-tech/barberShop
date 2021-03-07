@@ -33,6 +33,10 @@
       padding-bottom: 0px;
       padding-right: 0;
     }
+
+    @media screen and (min-width: 1280px) {
+      padding-right: 40px;
+    }
   }
 
   .about & {
