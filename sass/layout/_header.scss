@@ -19,7 +19,7 @@
     @media screen and (min-width: 768px) {
       margin-right: 24px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       margin-right: 40px;
     }
   }
@@ -53,7 +53,7 @@
   letter-spacing: 0.1em;
   color: var(--title-dark-theme);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: auto;
     margin-right: 40px;
     padding: 52px 0;
@@ -72,7 +72,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;

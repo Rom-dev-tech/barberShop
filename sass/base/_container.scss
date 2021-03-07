@@ -12,9 +12,9 @@
     padding: 0 39px;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding: 0 15px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 0 55px;
   }
 
   .header & {
@@ -24,9 +24,15 @@
   }
 
   .hero & {
-    display: flex;
+    padding-top: 208px;
+    padding-bottom: 178px;
 
-    padding-right: 0;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-right: 0;
+    }
   }
 
   .about & {
