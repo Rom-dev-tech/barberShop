@@ -1,10 +1,18 @@
 .logo {
   @extend %link;
-  // margin-right: 71px;
-  padding: 40px 0;
+  @media screen and (max-width: 767px) {
+    fill: var(--title-dark-theme);
+    padding: 40px 0;
+  }
 
   @media screen and (min-width: 768px) {
+    margin-right: 64px;
     padding: 32px 0;
+    fill: inherit;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 71px;
   }
 
   animation-duration: 1500ms;
