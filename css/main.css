@@ -151,13 +151,6 @@ a {
   justify-content: space-between;
 }
 
-.form-flex-container {
-  display: flex;
-  justify-content: center;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
 .modal-btn {
   font-weight: 600;
   font-size: 12px;
@@ -231,7 +224,9 @@ a {
 
 .achievements .title,
 .services .title,
-.masters .title {
+.masters .title,
+.form-section .title,
+.contact-information .title {
   font-size: 42px;
   line-height: 1.166;
   margin-bottom: 20px;
@@ -1008,14 +1003,7 @@ a {
 
 .form-section {
   background-color: #191c26;
-  padding: 130px 40px 193px 55px;
-  min-width: 655px;
-}
-
-.form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  text-align: center;
 }
 
 .name-field,
