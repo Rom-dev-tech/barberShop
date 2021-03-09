@@ -57,7 +57,7 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -283,6 +283,7 @@ a {
 
 .gallary .subtitle {
   margin-bottom: 44px;
+  line-height: 1.91;
 }
 
 .contact-information .subtitle {
@@ -975,6 +976,34 @@ a {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallary-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallary-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallary-list-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallary-list-item {
+    width: calc((100% - 8 * 15px) / 4);
+  }
 }
 
 .form-section {
