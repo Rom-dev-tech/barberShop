@@ -977,17 +977,6 @@ a {
   margin-bottom: 30px;
 }
 
-.gallary-list {
-  display: flex;
-  align-items: center;
-  margin: -15px;
-}
-
-.gallary-list-item {
-  width: calc((100% - 90px) / 4);
-  margin: 15px;
-}
-
 .form-section {
   background-color: #191c26;
   padding: 130px 40px 193px 55px;

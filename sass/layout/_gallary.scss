@@ -1,10 +1,10 @@
 .gallary-list {
   @extend %list;
-  display: flex;
-  align-items: center;
-  margin: -15px;
+  // display: flex;
+  // align-items: center;
+  // margin: -15px;
 }
 .gallary-list-item {
-  width: calc((100% - 90px) / 4);
-  margin: 15px;
+  // width: calc((100% - 90px) / 4);
+  // margin: 15px;
 }
