@@ -541,28 +541,30 @@
       </section>
 
       <!--FORM-->
-            <section class="form-section section-padding">
-                     <div class="container">
-                        <h2 class="title title-dark-theme">Онлайн-запись</h2>
+            <div class="form-contacts-flex-container">
+               <section class="form-section section-padding">
+                  <div class="container">
+                     <h2 class="title title-dark-theme">Онлайн-запись</h2>
 
-                     <form action="#" class="form" autocomplete="off">
+                  <form action="#" class="form" autocomplete="off">
 
-                        <input class="name-field" type="text" name="user-name" placeholder="Имя*" required minlength="2">
+                     <input class="name-field" type="text" name="user-name" placeholder="Имя*" required minlength="2">
 
-                        <input class="phone-field" type="tel" name="user-phone" placeholder="Телефон*" required>
+                     <input class="phone-field" type="tel" name="user-phone" placeholder="Телефон*" required>
 
-                        <textarea class="message" name="message" placeholder="сообщение"></textarea>
+                     <textarea class="message" name="message" placeholder="сообщение"></textarea>
 
-                        <button class="modal-btn modal-btn-dark-theme">отправить</button>
+                     <button class="modal-btn modal-btn-dark-theme">отправить</button>
 
-                     </form>
-                     </div>
-            </section>
+                  </form>
+                  </div>
+         </section>
 
-            <!--CONTACTS-->
-            <section class="contact-information section-padding">
-                     <div class="conteiner">
-                        <h2 class="title title-dark-theme">Контакты</h2>
+         <!--CONTACTS-->
+         <section class="contact-information section-padding">
+                  <div class="container">
+                     <h2 class="title title-dark-theme">Контакты</h2>
+                  <div class="contact-flex-container">
                      <address class="address">
                         <ul class="contact-information-list">
                            <li class="contact-information-list-item">
@@ -587,14 +589,18 @@
                            </li>
                         </ul>
                      </address>
-                     <p class="subtitle">время работы</p>
-                     <p class="description description-dark-theme">Ежедневно с 9:00 до 22:00 </p>
+                     <div class="contacts-right-site">
+                        <p class="subtitle">время работы</p>
+                        <p class="description description-dark-theme">Ежедневно с 9:00 до 22:00 </p>
                      </div>
-         </section>
+                  </div>
+                  </div>
+      </section>
+            </div>
    </main>
 
    <!--FOOTER-->
-   <!-- <footer class="footer">
+   <footer class="footer">
       <div class="container">
          <p class="copy">&copy; Copyright 2020</p>
          <ul class="footer-list">
@@ -606,7 +612,7 @@
             </li>
          </ul>
       </div>
-   </footer> -->
+   </footer>
 
    <!--!Модельное окно-->
    <div class="backdrop is-hidden" data-modal>

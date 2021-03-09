@@ -1,8 +1,14 @@
 .form-section {
   background-color: #191c26;
-  text-align: center;
-  // padding: 130px 40px 193px 55px;
-  // min-width: 655px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 655px;
+    padding-right: 40px;
+    padding-bottom: 193px;
+  }
 }
 .form {
   // display: flex;
@@ -13,10 +19,17 @@
 .name-field,
 .phone-field,
 .message {
-  min-width: 270px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  min-width: 330px;
   height: 24px;
 
-  color: #ffffff;
+  @media screen and (min-width: 1280px) {
+    min-width: 270px;
+  }
+
+  color: var(--title-dark-theme);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -43,21 +56,22 @@
   }
 
   &:focus-within::placeholder {
-    color: #ffffff;
+    color: var(--title-dark-theme);
   }
 
   &:focus-within {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--title-dark-theme);
     outline: none;
   }
 }
 .name-field {
-  margin-right: 20px;
+  @media screen and (min-width: 768px) {
+    margin-right: 27px;
+  }
 }
 
 .message {
   width: 100%;
   height: 76px;
-
   resize: none;
 }
