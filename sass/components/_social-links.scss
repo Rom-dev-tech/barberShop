@@ -14,13 +14,19 @@
 }
 .hero-list::before,
 .footer-list::before {
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
   content: '';
   display: block;
   width: 60px;
   height: 1px;
   margin-right: 40px;
 
+  @media screen and (max-width: 767px) {
+    margin-right: 20px;
+  }
   flex-shrink: 0;
 
-  background-color: #303030;
+  background-color: var(--subtitle-light-theme);
 }

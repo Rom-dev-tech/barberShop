@@ -57,9 +57,10 @@
 
   &::after,
   &::before {
+    @media screen and (max-width: 379px) {
+      display: none;
+    }
     position: absolute;
-    /* top: 15%;
-   right: 15%; */
     content: '';
     display: block;
 

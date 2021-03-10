@@ -388,7 +388,21 @@ a {
   height: 1px;
   margin-right: 40px;
   flex-shrink: 0;
-  background-color: #303030;
+  background-color: var(--subtitle-light-theme);
+}
+
+@media screen and (max-width: 479px) {
+  .hero-list::before,
+  .footer-list::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-list::before,
+  .footer-list::before {
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -886,13 +900,17 @@ a {
 
 .achievements-list-counter::after, .achievements-list-counter::before {
   position: absolute;
-  /* top: 15%;
-   right: 15%; */
   content: '';
   display: block;
   width: 10px;
   height: 1px;
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 379px) {
+  .achievements-list-counter::after, .achievements-list-counter::before {
+    display: none;
+  }
 }
 
 .achievements-list-counter.second::after, .achievements-list-counter.second::before {
@@ -1226,6 +1244,12 @@ a {
 
 .footer-list-item:not(:last-child) {
   margin-right: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-list-item:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 
 .copy {
