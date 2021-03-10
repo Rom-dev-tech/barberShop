@@ -51,6 +51,21 @@
     }
   }
 
+  .form-section & {
+    @media screen and (min-width: 1280px) {
+      width: 655px;
+      padding-left: 55px;
+      padding-right: 40px;
+    }
+  }
+  .contact-information & {
+    @media screen and (min-width: 1280px) {
+      width: 625px;
+      padding-left: 100px;
+      padding-right: 55px;
+    }
+  }
+
   .footer & {
     display: flex;
     align-items: center;

@@ -145,6 +145,22 @@ a {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .form-section .container {
+    width: 655px;
+    padding-left: 55px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact-information .container {
+    width: 625px;
+    padding-left: 100px;
+    padding-right: 55px;
+  }
+}
+
 .footer .container {
   display: flex;
   align-items: center;
@@ -815,6 +831,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin: -15px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -848,30 +865,14 @@ a {
 
 .achievements-list-item {
   padding: 20px 21px;
-  min-height: 133px;
-  width: 193px;
   background: var(--background);
   text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .achievements-list-item {
-    width: 210px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .achievements-list-item {
-    width: 170px;
-  }
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
 
 .achievements-list-item:nth-child(even) {
   margin-top: 30px;
-}
-
-.achievements-list-item:not(:nth-child(even)) {
-  margin-right: 30px;
 }
 
 .achievements-list-counter {
@@ -1021,7 +1022,6 @@ a {
 .name-field,
 .phone-field,
 .message {
-  min-width: 330px;
   height: 24px;
   color: var(--title-dark-theme);
   font-weight: 600;
@@ -1043,11 +1043,19 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .name-field,
+  .phone-field,
+  .message {
+    min-width: 330px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .name-field,
   .phone-field,
   .message {
-    min-width: 270px;
+    min-width: 265px;
   }
 }
 
@@ -1130,7 +1138,6 @@ a {
 @media screen and (min-width: 1280px) {
   .contact-information {
     min-width: 625px;
-    padding-left: 45px;
   }
 }
 
