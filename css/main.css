@@ -1413,6 +1413,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 1280px;
+    padding: 0 55px;
+    margin: 0 auto;
   }
 }
 

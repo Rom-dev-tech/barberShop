@@ -109,5 +109,8 @@
 .form-contacts-flex-container {
   @media screen and (min-width: 1280px) {
     display: flex;
+    width: 1280px;
+    padding: 0 55px;
+    margin: 0 auto;
   }
 }
