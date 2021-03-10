@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .hero {
-    max-width: 480px;
+    max-width: 100%;
     height: 580px;
     margin: 0 auto;
     background-image: linear-gradient(
@@ -36,7 +36,6 @@
     height: 680px;
     flex-grow: 1;
     margin: 0 auto;
-    max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
